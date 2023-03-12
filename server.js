@@ -1,3 +1,6 @@
+const { connectToDb, getDb } = require('./db')
+const { ObjectId } = require('mongodb')
+
 var express = require('express')
 var cors = require('cors')
 const path = require('path')
@@ -7,8 +10,7 @@ const multer = require('multer')
 
 var app = express()
 
-const { connectToDb, getDb } = require('./db')
-const { ObjectId } = require('mongodb')
+
 
 // db connection
 let db
